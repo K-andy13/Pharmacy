@@ -2,7 +2,6 @@ import java.time.LocalDateTime;
 
 public class Purchase {
     private final int purchaseID;
-    private final int drugID;
     private final String drugName;
     private final String customerName;
     private final int quantity;
@@ -17,9 +16,8 @@ public class Purchase {
         return totalAmount;
     }
 
-    public Purchase(int purchaseID, String drugName, int drugID, String customerName, int quantity, double totalAmount, LocalDateTime purchaseDateTime) {
+    public Purchase(int purchaseID, String drugName,String customerName, int quantity, double totalAmount, LocalDateTime purchaseDateTime) {
         this.purchaseID = purchaseID;
-        this.drugID=drugID;
         this.customerName=customerName;
         this.quantity=quantity;
         this.drugName=drugName;

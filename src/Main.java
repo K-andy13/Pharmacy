@@ -1,10 +1,13 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.PreparedStatement;
+
+
 
 public class Main {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/sakila?autoReconnect=true&useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/pharmacy?autoReconnect=true&useSSL=false";
         String user = "blackjack13";
         String password = "Sarpoma..";
 
@@ -15,4 +18,6 @@ public class Main {
             e.printStackTrace();
         }
     }
+
+
 }

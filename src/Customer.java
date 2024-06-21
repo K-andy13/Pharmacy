@@ -6,14 +6,14 @@ public class Customer {
 
     // Constructor
     public Customer(int customerID, String customerName, String customerEmail) {
-        this.customerID = customerID;
+  //      this.customerID = customerID;
         this.customerName = customerName;
         this.customerEmail = customerEmail;
         Utility.customerCollection.put(this.customerName,this);
     }
 
     // Getters
-    public int getCustomerID() {
+   public int getCustomerID() {
         return customerID;
     }
 
@@ -26,9 +26,9 @@ public class Customer {
     }
 
     // Setters
-    public void setCustomerID(int customerID) {
+   /* public void setCustomerID(int customerID) {
         this.customerID = customerID;
-    }
+    }*/
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
@@ -42,7 +42,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "customerID=" + customerID +
+             //   "customerID=" + customerID +
                 ", customerName='" + customerName + '\'' +
                 ", customerEmail='" + customerEmail + '\'' +
                 '}';
@@ -62,7 +62,7 @@ public class Customer {
         System.out.println("Customer Email: " + customer.getCustomerEmail());
 
         // Using setters
-        customer.setCustomerID(2);
+       // customer.setCustomerID(2);
         customer.setCustomerName("Jane Doe");
         customer.setCustomerEmail("jane.doe@example.com");
 
